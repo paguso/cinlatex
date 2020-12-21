@@ -1,0 +1,100 @@
+% Use opções compatívels com a classe article
+\documentclass[12pt, oneside]{ufpeexam}
+% Use a opção bw para tipografar em preto e branco
+%\documentclass[12pt, oneside, bw]{ufpeexam}
+
+\usepackage{multicol}
+\usepackage{paralist}
+\usepackage{lipsum}
+
+%% Caso deseje, pode mudar os rótulos-padrão das questões e suas soluções
+%\makeatletter
+%\renewcommand{\@question}{Pergunta}
+%\renewcommand{\@answer}{Resposta}
+%\makeatother
+
+
+% Identificação da Universidade / Centro / Depto
+\university{Universidade Federal de Pernambuco}
+\institute{Centro de Informática}
+%\department{Depto. de Ciência da Computação}
+
+% Identificação do curso
+\program{Nome do Curso}
+
+% Identificação da disciplina
+\course{Nome da Disciplina}
+
+% Identificação do semestre letivo
+\term{2020.2}
+
+% Professor
+\author[a]{Nome da Professora} % author[a]=female author[s]=multiple
+
+% Descrição do Exame
+\title{Primeira Prova}
+
+
+\date{\today}
+
+%% Descomente a linha a seguir para omitir as soluções
+%\hideanswers
+
+\begin{document}
+
+\makeheader
+
+%% Insere uma linha para assinatura do aluno, se necessário
+% \studentsignature
+
+%% Adicione uma caixa de instruções com o ambiente instructions
+\begin{instructions}
+\begin{compactitem}
+\item Esta prova tem XXX questões.
+\item A duração da prova é de 02h00min.
+\end{compactitem}
+\end{instructions}
+
+%% Se preferir, pode tipografar a prova em duas colunas, para poupar espaço
+%\begin{multicols}{2}
+
+%% Adicione questões com o ambiente question
+%% O argumento opcional é inserido logo após o rótulo da questão
+\begin{question}[\smallskip (2,0pt)\\]
+%% Texto da questão aqui
+	\lipsum[1-2][3-4]
+\end{question}
+
+%% Adicione uma resposta com o ambiente answer
+%% Para omitir a solução, use o comando \hideanswers antes do \begin{document}
+%% Assim você pode preparar as soluções mas só exibi-las posteriormente na
+%% divulgação do gabarito.
+\begin{answer}
+	\lipsum[5-6][7-8]
+\end{answer}
+
+
+\begin{question}[\smallskip (2,0pt)\\]
+	\lipsum[9-11][12-15]
+\end{question}
+\begin{answer}
+	\lipsum[16-19][20-23]
+\end{answer}
+
+
+\begin{question}[\smallskip(\textit{Uma questão muito longa}: 8,0pt)\\]
+	\lipsum[24-30][1-10]
+\end{question}
+\begin{answer}
+	\lipsum[30-40][10-60]
+\end{answer}
+
+
+
+%% Fim do trecho em duas colunas
+%\end{multicols}
+
+%% Apenas marca o fim da prova
+\eof
+
+\end{document}
