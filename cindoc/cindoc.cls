@@ -1,3 +1,26 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% cindoc.cls
+%%% CIn Document LaTeX class
+%%% (C) 2014 Paulo Gustavo Soares da Fonseca
+%%% THIS FILE COMES WITH NO WARRANTIES
+%%% PERMISSION TO COPY AND REDISTRIBUTE FREE OF CHARGE
+%%% FOR ACADEMIC PURPOSES ONLY
+%%% THIS IS NOT AN OFFICIAL CIN UFPE PRODUCT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%    Author              = "Paulo G. S. Fonseca",
+%%%    Version             = "2.0",
+%%%    Date                = "Dec 20, 2020",
+%%%    Filename            = "cindoc.cls",
+%%%    Address             = "Universidade Federal de Pernambuco
+%%%                           Centro de Informática",
+%%%    Telephone           = "+55 81 2126-8430",
+%%%    Email               = "paguso@cin.ufpe.br",
+%%%    Keywords            = "LaTeX, CIn",
+%%%    Abstract            = "LaTeX document-style for typesetting 
+%%%                           diverse documents at CIn UFPE - Brazil"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \ProvidesClass{cindoc}[2020/12/20]
 
 \DeclareOption{bw}{%
